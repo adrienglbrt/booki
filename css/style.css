@@ -232,6 +232,22 @@ header .logo {
     width: 65%;
 }
 
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 33%;
+}
+
+.hebergements-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
