@@ -103,6 +103,59 @@ header .logo {
     border-top: 2px solid #0065FC;
 }
 
+/****** Search ***********/
+
+.search-block {
+    margin-top: 32px;
+}
+
+.search-block h2 {
+    margin-bottom: 8px;
+}
+
+.search-block form {
+    margin: 32px 0px;
+    display: flex;
+}
+
+#form-gps-geolocation {
+    height: 48px;
+    width: 48px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#form-gps-geolocation i {
+    color: #000;
+    font-size: 18px;
+}
+
+#form-input-geolocation {
+    height: 48px;
+    padding: 16px;
+    border-top: 1px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#form-input-geolocation::placeholder {
+    color: #000;
+}
+
+#form-submit-geolocation {
+    height: 48px;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
