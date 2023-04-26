@@ -188,19 +188,36 @@ header .logo {
 }
 
 .filter-button-icon {
-    font-size: 22px
+    font-size: 22px;
+    margin-left: 18px 
 }
 
 .filter-button-text {
     font-size: 17px;
     font-weight: 700;
-    padding: 16px 18px 16px 8px;
+    margin: 16px 18px 16px 8px;
+}
+
+.info-results-number i {
+    height: 24px;
+    width: 24px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+}
+
+.info-results-number span {
+    margin-left: 8px;
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
 .hebergements-and-populaires section {
