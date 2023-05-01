@@ -325,10 +325,12 @@ header .logo {
 .activites-cards {
     margin-top: 30px;
     display: flex;
+    justify-content: space-between;
 }
 
 .activites-cards .card {
-    width: 25%;
+    width: 23%;
+    padding: 0;
 }
 
 .activites-cards img {
