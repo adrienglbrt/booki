@@ -348,6 +348,35 @@ header .logo {
     margin: 20px 0;
 }
 
+/****** Footer ***********/
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-column {
+    padding: 20px;
+    width: 33%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+}
+
+.footer-column ul {
+    padding: 0;
+}
+
+.footer-column li {
+    font-size: 16px;
+    list-style: none;
+    padding-top: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
