@@ -262,6 +262,12 @@ header .logo {
     margin: 8px 0px;
 }
 
+.see-more-button {
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
