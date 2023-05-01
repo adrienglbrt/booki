@@ -242,10 +242,17 @@ header .logo {
 .hebergements-cards img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 124px;
 }
 
 .hebergements-cards .card-content {
     padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 8px 0px;
 }
 
 /****** Populaires ***********/
