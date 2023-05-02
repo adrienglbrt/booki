@@ -99,8 +99,8 @@ header .logo {
 }
 
 .top-nav-entry a:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /****** Search ***********/
@@ -121,7 +121,7 @@ header .logo {
 #form-gps-geolocation {
     height: 48px;
     width: 48px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border: none;
     border-radius: 15px 0px 0px 15px;
 }
@@ -134,8 +134,8 @@ header .logo {
 #form-input-geolocation {
     height: 48px;
     padding: 16px;
-    border-top: 1px solid #F2F2F2;
-    border: 1px solid #F2F2F2;
+    border-top: 1px solid var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
     border-right: none;
     font-weight: 700;
     font-size: 18px;
@@ -147,7 +147,7 @@ header .logo {
 
 #form-submit-geolocation {
     height: 48px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: #fff;
     font-weight: 700;
     font-size: 18px;
@@ -184,7 +184,7 @@ header .logo {
 }
 
 .filter-button:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 .filter-button-icon {
@@ -351,7 +351,7 @@ header .logo {
 /****** Footer ***********/
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-top: 35px;
 }
 
