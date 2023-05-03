@@ -175,6 +175,8 @@ header .logo {
 }
 
 .filter-button {
+    display: flex;
+    align-items: center;
     height: 48px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
@@ -222,8 +224,7 @@ header .logo {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 30px;
+    margin: 32px 0;
 }
 
 .hebergements-and-populaires section {
@@ -273,6 +274,7 @@ header .logo {
     border: none;
     font-size: 18px;
     font-weight: 700;
+    background-color: transparent;
 }
 
 /****** Populaires ***********/
@@ -453,8 +455,10 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0 20px;
+        padding: 0;
     }
+
+    /****** Header ***********/
 
     header {
         flex-direction: column;
@@ -492,9 +496,49 @@ footer {
         border-bottom: 2px solid var(--main-color);
     }
 
+    /****** Main ***********/
+
     main {
         margin-top: 80px;
         /* Ici j'ai été obligé de rajouter cette marge, mais quelque chose m'échappe car il y a déjà une margin-top sur la section, qui n'a pas l'air d'être prise en compte. */
+        padding: 0 20px;
     }
 
+    #form-submit-geolocation {
+        border-radius: 15px;
+        position: relative;
+        right: 20px;
+        /* Idem je ne suis pas très satisfait de cette manière de positionner l'icône */
+    }
+
+    #form-submit-geolocation span {
+        display: none;
+    }
+    
+    #form-submit-geolocation i {
+        display: inline;
+        color: #fff;
+    }
+
+    .filters-block fieldset {
+        flex-wrap: wrap;
+    }
+
+    .filters-line-break {
+        /* Ça me semble vraiment pas très élégant comme manière d'aligner les filtres 2 par 2, mais avec des largeurs fixes j'ai du mal à comprendre comment bien gérer le mobile */
+        width: 100%;
+        height: 16px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires-cards, .hebergements-cards, .activites-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards .card, .hebergements-cards .card, .activites-cards .card {
+        width: 100%;
+    }
 }
