@@ -227,7 +227,9 @@ header .logo {
     margin: 32px 0;
 }
 
-.hebergements-and-populaires section {
+/* .hebergements-and-populaires section {
+    Ici j'ai changé les sélecteurs car je n'arrivais plus à reprendre la main pour les background via media query sur le mobile*/
+.hebergements, .populaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -501,7 +503,18 @@ footer {
     main {
         margin-top: 80px;
         /* Ici j'ai été obligé de rajouter cette marge, mais quelque chose m'échappe car il y a déjà une margin-top sur la section, qui n'a pas l'air d'être prise en compte. */
+    }
+
+    section {
         padding: 0 20px;
+    }
+
+    .search-block form {
+        justify-content: space-between;
+    }
+
+    #form-input-geolocation {
+        flex-grow: 1;
     }
 
     #form-submit-geolocation {
@@ -534,11 +547,29 @@ footer {
         flex-direction: column-reverse;
     }
 
+    .populaires {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .hebergements {
+        margin-top: 16px;
+        background-color: #fff;
+    }
+
     .populaires-cards, .hebergements-cards, .activites-cards {
         flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
     }
 
     .populaires-cards .card, .hebergements-cards .card, .activites-cards .card {
         width: 100%;
+        margin: 0;
     }
+
+    .see-more-button {
+        align-self: baseline;
+    }
+
 }
