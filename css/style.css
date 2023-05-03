@@ -505,7 +505,7 @@ footer {
         /* Ici j'ai été obligé de rajouter cette marge, mais quelque chose m'échappe car il y a déjà une margin-top sur la section, qui n'a pas l'air d'être prise en compte. */
     }
 
-    section {
+    section, .filters-block {
         padding: 0 20px;
     }
 
@@ -515,13 +515,11 @@ footer {
 
     #form-input-geolocation {
         flex-grow: 1;
+        /* Je n'arrive pas à trouver comment étendre la border sur la droite pour apparaître sous le radius corner de l'icone loupe */
     }
 
     #form-submit-geolocation {
         border-radius: 15px;
-        position: relative;
-        right: 20px;
-        /* Idem je ne suis pas très satisfait de cette manière de positionner l'icône */
     }
 
     #form-submit-geolocation span {
