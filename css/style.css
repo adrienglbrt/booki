@@ -351,7 +351,7 @@ header .logo {
 }
 
 .activites-cards .card-content {
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .activites-cards .card-title {
@@ -399,6 +399,26 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+    .filters-title {
+        float: none;
+        margin-bottom: 8px;
+    }
+
+    .filter-button {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .filter-button-icon {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .filter-button-text {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -428,6 +448,10 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
