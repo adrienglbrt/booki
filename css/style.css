@@ -453,7 +453,7 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0;
+        padding: 0 20px;
     }
 
     header {
@@ -467,12 +467,19 @@ footer {
     .top-nav {
         width: 100%;
     }
+
+    .top-nav-items {
+        padding-inline-start: 0;
+        /* Modifier cette propriété à ce stade me semble bizarre, peut-être devrais-je le gérer déjà en desktop ? */
+    }
      
     .top-nav-entry {
+        padding-left: 0;
         width: 50%;
     }
      
     .top-nav-entry a {
+        text-align: center;
         width: 100%;
         padding-top: 0;
         padding-bottom: 16px;
@@ -483,6 +490,11 @@ footer {
     .top-nav-entry a:hover {
         border-top: none;
         border-bottom: 2px solid var(--main-color);
+    }
+
+    main {
+        margin-top: 80px;
+        /* Ici j'ai été obligé de rajouter cette marge, mais quelque chose m'échappe car il y a déjà une margin-top sur la section, qui n'a pas l'air d'être prise en compte. */
     }
 
 }
