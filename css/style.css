@@ -71,16 +71,11 @@ header .logo {
 } 
 
 .top-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     height: 100%;
 }
 
 .top-nav-items {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
@@ -457,5 +452,37 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin: 30px 0;
+    } 
+     
+    .top-nav {
+        width: 100%;
+    }
+     
+    .top-nav-entry {
+        width: 50%;
+    }
+     
+    .top-nav-entry a {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 16px;
+        border-top: none;
+        border-bottom: 2px solid white;
+    }
+    
+    .top-nav-entry a:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+
 }
