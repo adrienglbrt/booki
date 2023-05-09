@@ -558,6 +558,10 @@ footer {
         width: auto;
     }
 
+    .info-results-number i {
+        padding: 8px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
